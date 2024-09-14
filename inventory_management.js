@@ -22,3 +22,13 @@ function updateStock(products, unitsSold) {
         return (`Not enough products to sell`) // message in case tries to sell more than what inventory has
     };
 };
+
+//Task 4: Create a Function to Check Low Stock Products
+function checkLowStock(inventory) {
+    inventory.forEach(products => {
+        if (products.quantity <= products.lowStockLevel) {
+            console.log(`Low on stock`);
+        }
+    });
+}; // function to check for products that are low in stock and need to be restocked
+
