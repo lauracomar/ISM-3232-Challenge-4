@@ -32,3 +32,11 @@ function checkLowStock(inventory) {
     });
 }; // function to check for products that are low in stock and need to be restocked
 
+// Task 5: Create a Function to Calculate Total Inventory Value
+function calculateInventoryValue(inventory) {
+    let totalInventoryValue = inventory.reduce((totalInventoryValue, products) => total + (products.price * products.quantity), 0);
+    console.log(`Total Inventory Value is ${totalInventoryValue}`);
+};
+
+
+
